@@ -1,16 +1,5 @@
 
-window.onload('inline-share-buttons', {
-    alignment: 'right',
-    id: 'share-buttons',
-    enabled: true,
-    font_size: 12,
-    padding: 3,
-    radius: 2,
-    networks: ['facebook', 'twitter', 'reddit',   'email', 'sharethis'],  
-    size: 18,
-    show_mobile_buttons: true,
-    spacing: 4,
-    onLoad: function () {
+window.__sharethis__.initialize( 
       //override the default email sharing functionality since it's broken in outlook
       document.querySelector('.st-btn[data-network=email]').addEventListener('click', function (e) {
         var subject = "I'd like to share a link with you";
@@ -19,8 +8,9 @@ window.onload('inline-share-buttons', {
   
         //Prevent default share this functionality
         e.stopPropagation();
-      });
-    }
+      })
+    
+)
 
     /*botonCorreo.onclick= function overrideShareSendMail() {
     $('div[data-network="email"]').replaceWith($('div[data-network="email"]').clone());
