@@ -12,6 +12,14 @@ window.__sharethis__.initialize(
     
 )
 
+function myFunction() {
+ 
+  var URL=  window.location.href;
+  navigator.clipboard.writeText(URL);
+
+  
+}
+
     /*botonCorreo.onclick= function overrideShareSendMail() {
     $('div[data-network="email"]').replaceWith($('div[data-network="email"]').clone());
     $('div[data-network="email"]').on("click", function () {

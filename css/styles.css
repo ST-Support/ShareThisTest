@@ -24,7 +24,7 @@
     visibility: visible;
   }
 
-  .st-custom-button[data-network] {   
+  .st-custom-button{   
     background-color: #0adeff;   
     display: inline-block;   
     padding: 5px 10px;   
@@ -32,7 +32,7 @@
     font-weight: bold;   
     color: #fff;   
   }   
-    .st-custom-button[data-network]:hover, .st-custom-button[data-twitter]:focus 
+    .st-custom-button:hover, .st-custom-button:focus 
     {      
       text-decoration: underline;      
       background-color: #00c7ff;   }
