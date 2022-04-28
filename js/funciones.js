@@ -1,16 +1,14 @@
 
-window.__sharethis__.initialize( 
+window.__sharethis__.load('inline-share-buttons'),{
+
+  onLoad: function () {
       //override the default email sharing functionality since it's broken in outlook
-      document.querySelector('.st-btn[data-network=email]').addEventListener('click', function (e) {
-        var subject = "I'd like to share a link with you";
-        var body = document.querySelector('#share-buttons').data('url');
-        document.location = "mailto:?subject=" + subject + "&body=" + body;
-  
-        //Prevent default share this functionality
-        e.stopPropagation();
-      })
+      document.getElementById("").style.padding= "0 12px";
+       console.log("hola world");
+}
+
     
-)
+
 
 function myFunction() {
  
@@ -18,6 +16,11 @@ function myFunction() {
   navigator.clipboard.writeText(URL);
 
   
+}
+
+function hideSticky(){
+  document.getElementsByClassName('sharethis-sticky-share-buttons').style.display=
+  'none';
 }
 
     /*botonCorreo.onclick= function overrideShareSendMail() {

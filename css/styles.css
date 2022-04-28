@@ -44,3 +44,11 @@
   height:100px;
   
 }   
+
+.sharethis-sticky-share-buttons{
+  display: none;
+}
+
+.st-btn{
+  padding: 0 12px !important;
+}

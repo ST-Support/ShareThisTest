@@ -14,10 +14,10 @@
     <meta property="og:site_name" content="Mi sitioo" />  
 
 <link rel="stylesheet" href="https://bregonunez.github.io/ShareThisTest/css/styles.css">
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6227c916b9a7530012fa807b&product=sop' async='async'></script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62436b404995c10019c69213&product=sticky-share-buttons' async='async'></script>
 <script src="/js/funciones.js"></script>
 </head>
-<body>
+<body onload="hideSticky()">
     <!-- powr pop-up BEGIN -->
 <div class="powr-popup" id="sharethis-popup-6227c916b9a7530012fa807b"></div>
     <!-- powr pop-up END -->
@@ -36,7 +36,9 @@
     data-title="Hola esto es custom data-title del  inline" data-description="Descripion del inline" 
     data-username="brego"
     data-email-subject="This custom subject works"
-    data-message="This is a body message">
+    data-message="This is a body message"
+    style="display:block; margin-left:50%; text-align: center; padding: 0 10px;"
+    >
         
         
     </div>
@@ -45,7 +47,7 @@
     <!-- ShareThis inline END -->
 
     <!-- ShareThis image button TEST BEGIN -->
-    <div  id='st-el-1' class='st-image-share-buttons' class='st-hide'
+    <div  
     data-title="Hola esto es custom data-title del  IMAGE SHARE BUTTON" 
      data-message="This is a body message IMAGE SHARE BUTTON" data-description="Esta es una descripcion de los IMAGE SHARE BUTTON"
      data-image="https://bregonunez.github.io/ShareThisTest/img/shrekPoster.jpg" data-url="https://www.apple.com/"
@@ -96,6 +98,7 @@
 
 <!-- ShareThis custom begin-->
      <h3>custom share button</h3>
+     <div class="button share-button facebook-share-button st-custom-button" data-network="facebook">share</div> <div class="button share-button twitter-share-button">tweet</div>
      <div  class="st-custom-button" data-network="facebook" data-url="sharethis.com">share</div> 
      <div  class="st-custom-button" data-network="twitter"  data-url="sharethis.com">tweet</div>
      <div  class="st-custom-button" data-network="none" onclick="myFunction()">Copy URL</div>
