@@ -6,17 +6,17 @@ window.__sharethis__.load('inline-share-buttons'),{
       document.getElementById("").style.padding= "0 12px";
        console.log("hola world");
 }
-
+}
     
 
 
-function myFunction() {
+ function myFunction(){
  
   var URL=  window.location.href;
   navigator.clipboard.writeText(URL);
 
   
-}
+} 
 
 function hideSticky(){
   document.getElementsByClassName('sharethis-sticky-share-buttons').style.display=
