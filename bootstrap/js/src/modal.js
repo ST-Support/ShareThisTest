@@ -121,6 +121,7 @@ const Modal = (($) => {
       $(this._element).trigger(showEvent)
 
       if (this._isShown || showEvent.isDefaultPrevented()) {
+        
         return
       }
 
