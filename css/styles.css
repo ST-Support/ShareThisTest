@@ -25,7 +25,7 @@
   }
 
   .st-custom-button{   
-    background-color: #e6ff0a;   
+    background-color: #e6ff0a !important;   
     display: inline-block;   
     padding: 5px 10px;   
     cursor: pointer;   
@@ -52,4 +52,8 @@
 
 .st-btn{
   padding: 0 12px !important;
+}
+
+.st-total{
+  color: rgb(176, 87, 87) !important;
 }
