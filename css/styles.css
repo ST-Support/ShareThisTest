@@ -57,3 +57,10 @@
 .st-total{
   color: rgb(176, 87, 87) !important;
 }
+
+.cajita{
+  border-radius: 8px;
+    background: #99c1a4;
+    height: 100%;
+    padding: 64px 32px;
+}
