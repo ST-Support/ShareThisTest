@@ -64,3 +64,21 @@
     height: 100%;
     padding: 64px 32px;
 }
+
+@media screen and (max-width: 600px) {
+.sharethis-inline-share-buttons{
+text-align: center !important;
+}
+}
+
+@media not screen  and (max-width: 600px) {
+  .sharethis-inline-share-buttons{
+  text-align: left !important;
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sharethis-inline-share-buttons{
+     width: 300px;
+    }
+    }

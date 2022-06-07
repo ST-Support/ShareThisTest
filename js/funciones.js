@@ -1,13 +1,14 @@
 
-window.__sharethis__.load('inline-share-buttons'),{
+/*window.__sharethis__.load('inline-share-buttons'),{
 
   onLoad: function () {
       //override the default email sharing functionality since it's broken in outlook
       document.getElementById("").style.padding= "0 12px";
        console.log("hola world");
 }
-}
+}*/
     
+//document.getElementById("stscript").onload = script.onreadystatechange = function(){ alert("Script loaded!"); }
 
 
  function myFunction(){
@@ -17,11 +18,11 @@ window.__sharethis__.load('inline-share-buttons'),{
 
   
 } 
+/*window.onload = (event) => {
+  document.getElementsByClassName('sharethis-sticky-share-buttons').style.display='none';
+}; */
 
-function hideSticky(){
-  document.getElementsByClassName('sharethis-sticky-share-buttons').style.display=
-  'none';
-}
+
 
 /* function activarBotonesModal(){
   window.dispatchEvent(new Event('resize'));
@@ -33,7 +34,7 @@ async function activateButtonsModal() {
   console.log('start timer');
   await new Promise(resolve => setTimeout(resolve, 300));
   window.__sharethis__.initialize();
-  console.log('after 1 second');
+  console.log('after 0.3 second');
 }
     /*botonCorreo.onclick= function overrideShareSendMail() {
     $('div[data-network="email"]').replaceWith($('div[data-network="email"]').clone());
@@ -44,3 +45,26 @@ async function activateButtonsModal() {
     });
     }
   */
+
+//alert("Hello! I am an alert box!!");
+
+window.__sharethis__.load('inline-share-buttons',  { 
+  alignment: 'left', // left, right, center, justified.
+  enabled: true,
+  font_size: 16, // small = 11, medium = 12, large = 16.
+  id: 'my-inline-buttons', // load the javascript into a specific dom element by id attribute
+  labels: 'counts', // "cta", "counts", or "none"
+  min_count: 0, // minimum amount of shares before showing the count
+  padding: 8, // small = 8, medium = 10, large = 12.
+  radius: 25, // in pixels
+  networks: ['blogger',
+  'delicious',
+  'digg',
+  'email'],
+  show_total: true,
+  show_mobile_buttons: true, // forces sms to show on desktop
+  use_native_counts: false, // uses native facebook counts from the open graph api
+  size: 48, // small = 32, medium = 40, large = 48.
+  spacing: 0 // spacing = 8, no spacing = 0.
+}
+);
