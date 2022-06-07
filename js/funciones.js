@@ -56,16 +56,15 @@ window.__sharethis__.load('inline-share-buttons',  {
   labels: 'counts', // "cta", "counts", or "none"
   min_count: 0, // minimum amount of shares before showing the count
   padding: 8, // small = 8, medium = 10, large = 12.
-  radius: 0, // in pixels
+  radius: 5, // in pixels
   networks: ['blogger',
   'twitter',
   'digg',
-  'email',
-'reddit'],
+  'email'],
   show_total: true,
   show_mobile_buttons: true, // forces sms to show on desktop
   use_native_counts: false, // uses native facebook counts from the open graph api
   size: 48, // small = 32, medium = 40, large = 48.
-  spacing: 8 // spacing = 8, no spacing = 0.
+  spacing: 0 // spacing = 8, no spacing = 0.
 }
 );
