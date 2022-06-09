@@ -93,7 +93,7 @@ window.__sharethis__.load('inline-share-buttons', {
 }
 );
 
-window.__sharethis__.load('sticky-share-buttons',  {
+/*window.__sharethis__.load('sticky-share-buttons',  {
   alignment: 'right', // left, right, center, justified.
   enabled: true,
   id: 'my-sticky-buttons', // load the javascript into a specific dom element by id attribute
@@ -111,4 +111,4 @@ window.__sharethis__.load('sticky-share-buttons',  {
   use_native_counts: false, // uses native facebook counts from the open graph api
   size: 48, // small = 32, medium = 40, large = 48.
   spacing: 0 // spacing = 8, no spacing = 0.
-} );
+} ); */
