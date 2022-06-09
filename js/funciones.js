@@ -50,7 +50,7 @@ async function activateButtonsModal() {
 
 /* window.__sharethis__.load('inline-share-buttons',  config ); */
 
-var config={
+/*var config={
   alignment: 'justified', // left, right, center, justified.
   enabled: true,
   font_size: 16, // small = 11, medium = 12, large = 16.
@@ -69,7 +69,7 @@ var config={
   use_native_counts: false, // uses native facebook counts from the open graph api
   size: 48, // small = 32, medium = 40, large = 48.
   spacing: 0 // spacing = 8, no spacing = 0.
-}
+} */
 
 window.__sharethis__.load('inline-share-buttons',{
   alignment: 'justified', // left, right, center, justified.
