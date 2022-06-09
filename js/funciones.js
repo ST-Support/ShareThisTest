@@ -50,7 +50,7 @@ async function activateButtonsModal() {
 
 window.__sharethis__.load('inline-share-buttons',  config );
 
-config={
+var config={
   alignment: 'justified', // left, right, center, justified.
   enabled: true,
   font_size: 16, // small = 11, medium = 12, large = 16.
