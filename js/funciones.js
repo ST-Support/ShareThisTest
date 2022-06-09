@@ -71,7 +71,7 @@ async function activateButtonsModal() {
   spacing: 0 // spacing = 8, no spacing = 0.
 } */
 
-window.__sharethis__.load('inline-share-buttons',{
+window.__sharethis__.load('inline-share-buttons', {
   alignment: 'justified', // left, right, center, justified.
   enabled: true,
   font_size: 16, // small = 11, medium = 12, large = 16.
