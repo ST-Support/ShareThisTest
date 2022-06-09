@@ -70,3 +70,23 @@ var config={
   size: 48, // small = 32, medium = 40, large = 48.
   spacing: 0 // spacing = 8, no spacing = 0.
 }
+
+window.__sharethis__.load('sticky-share-buttons',  {
+  alignment: 'right', // left, right, center, justified.
+  enabled: true,
+  id: 'my-sticky-buttons', // load the javascript into a specific dom element by id attribute
+  labels: 'counts', // "cta", "counts", or "none"
+  min_count: 0, // minimum amount of shares before showing the count
+  padding: 8, // small = 8, medium = 10, large = 12.
+  radius: 5, // in pixels
+  networks: ['blogger',
+  'twitter',
+  'meneame',
+  'reddit',
+  'print'],
+  show_total: true,
+  show_mobile_buttons: true, // forces sms to show on desktop
+  use_native_counts: false, // uses native facebook counts from the open graph api
+  size: 48, // small = 32, medium = 40, large = 48.
+  spacing: 0 // spacing = 8, no spacing = 0.
+} );
