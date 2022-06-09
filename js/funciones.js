@@ -48,7 +48,7 @@ async function activateButtonsModal() {
 
 //alert("Hello! I am an alert box!!");
 
-window.__sharethis__.load('inline-share-buttons',  config );
+/* window.__sharethis__.load('inline-share-buttons',  config ); */
 
 var config={
   alignment: 'justified', // left, right, center, justified.
@@ -70,6 +70,28 @@ var config={
   size: 48, // small = 32, medium = 40, large = 48.
   spacing: 0 // spacing = 8, no spacing = 0.
 }
+
+window.__sharethis__.load('inline-share-buttons',{
+  alignment: 'justified', // left, right, center, justified.
+  enabled: true,
+  font_size: 16, // small = 11, medium = 12, large = 16.
+  id: 'my-inline-buttons', // load the javascript into a specific dom element by id attribute
+  labels: 'counts', // "cta", "counts", or "none"
+  min_count: 0, // minimum amount of shares before showing the count
+  padding: 8, // small = 8, medium = 10, large = 12.
+  radius: 5, // in pixels
+  networks: ['blogger',
+  'twitter',
+  'meneame',
+  'reddit',
+  'print'],
+  show_total: true,
+  show_mobile_buttons: true, // forces sms to show on desktop
+  use_native_counts: false, // uses native facebook counts from the open graph api
+  size: 48, // small = 32, medium = 40, large = 48.
+  spacing: 0 // spacing = 8, no spacing = 0.
+}
+);
 
 window.__sharethis__.load('sticky-share-buttons',  {
   alignment: 'right', // left, right, center, justified.
