@@ -93,8 +93,8 @@ window.__sharethis__.load('inline-share-buttons', {
   spacing: 0, // spacing = 8, no spacing = 0.
   onLoad: function () {
     //override the default email sharing functionality since it's broken in outlook
-    document.querySelector('[data-network="email"]').replaceWith('[data-network="email"]').clone();
-    document.querySelector('[data-network="email"]').onclick= function(){
+    document.querySelector('div[data-network="email"]').replaceWith('div[data-network="email"]').clone();
+    document.querySelector('div[data-network="email"]').onclick= function(){
       var subject = "I'd like to share a link with you";
       var body = window.location.href;
       window.location.href = "mailto:?subject=" + subject + "&body=" + body;
