@@ -84,7 +84,8 @@ window.__sharethis__.load('inline-share-buttons', {
   'twitter',
   'meneame',
   'reddit',
-  'print'],
+  'print',
+'email'],
   show_total: true,
   show_mobile_buttons: true, // forces sms to show on desktop
   use_native_counts: false, // uses native facebook counts from the open graph api
@@ -92,14 +93,14 @@ window.__sharethis__.load('inline-share-buttons', {
   spacing: 0, // spacing = 8, no spacing = 0.
   onLoad: function () {
     //override the default email sharing functionality since it's broken in outlook
-    document.getElementsByClassName('.st-btn[data-network=email]').on('click', function (e) {
+    document.getElementsByClassName('.st-btn[data-network=email]').onclick= function (e) {
       var subject = "I'd like to share a link with you";
-      var body = document.getElementById('my-inline-button').data('url');
+      var body = window.location.href;
       document.location = "mailto:?subject=" + subject + "&body=" + body;
 
       //Prevent default share this functionality
       e.stopPropagation();
-    });
+    };
   }
 }
 );
