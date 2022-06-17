@@ -71,12 +71,20 @@ async function activateButtonsModal() {
   spacing: 0 // spacing = 8, no spacing = 0.
 } */
 
-window.__sharethis__.load(
-  document.querySelector('div[data-network="email"]').addEventListener("click", (e) => {
-  var subject = "I'd like to share a link with you";
-  var body = window.location.href;
-  window.location.href = "mailto:?subject=" + subject + "&body=" + body;
-}))
+window.__sharethis__.load('inline-share-buttons',{
+  onLoad: function () {
+    //override the default email sharing functionality since it's broken in outlook
+   
+    document.querySelector('div[data-network="email"]').addEventListener("click", (e) => {
+      var subject = "I'd like to share a link with you";
+      var body = window.location.href;
+      window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+
+      e.stopPropagation();
+    })
+    }
+    }
+);
 
 window.__sharethis__.load('inline-share-buttons', {
   alignment: 'justified', // left, right, center, justified.
