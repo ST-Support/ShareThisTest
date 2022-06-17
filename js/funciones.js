@@ -89,7 +89,18 @@ window.__sharethis__.load('inline-share-buttons', {
   show_mobile_buttons: true, // forces sms to show on desktop
   use_native_counts: false, // uses native facebook counts from the open graph api
   size: 48, // small = 32, medium = 40, large = 48.
-  spacing: 0 // spacing = 8, no spacing = 0.
+  spacing: 0, // spacing = 8, no spacing = 0.
+  onLoad: function () {
+    //override the default email sharing functionality since it's broken in outlook
+    document.getElementsByClassName('.st-btn[data-network=email]').on('click', function (e) {
+      var subject = "I'd like to share a link with you";
+      var body = document.getElementById('my-inline-button').data('url');
+      document.location = "mailto:?subject=" + subject + "&body=" + body;
+
+      //Prevent default share this functionality
+      e.stopPropagation();
+    });
+  }
 }
 );
 
