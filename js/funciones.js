@@ -71,6 +71,12 @@ async function activateButtonsModal() {
   spacing: 0 // spacing = 8, no spacing = 0.
 } */
 
+document.querySelector('div[data-network="email"]').addEventListener("click", (e) => {
+  var subject = "I'd like to share a link with you";
+  var body = window.location.href;
+  window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+})
+
 window.__sharethis__.load('inline-share-buttons', {
   alignment: 'justified', // left, right, center, justified.
   enabled: true,
