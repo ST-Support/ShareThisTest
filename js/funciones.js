@@ -93,16 +93,15 @@ window.__sharethis__.load('inline-share-buttons', {
   spacing: 0, // spacing = 8, no spacing = 0.
   onLoad: function () {
     //override the default email sharing functionality since it's broken in outlook
-    document.querySelector('[data-network="email"]').onclick= function (e) {
+    document.querySelector('[data-network="email"]').replaceWith('[data-network="email"]').clone();
+    document.querySelector('[data-network="email"]').onclick= function(){
       var subject = "I'd like to share a link with you";
       var body = window.location.href;
-      document.location = "mailto:?subject=" + subject + "&body=" + body;
-
-      //Prevent default share this functionality
-      e.stopPropagation();
-    };
+      window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+    }
+    }
   }
-}
+
 );
 
 /*window.__sharethis__.load('sticky-share-buttons',  {
