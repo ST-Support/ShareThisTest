@@ -86,7 +86,7 @@ async function activateButtonsModal() {
  */
 
 window.onload = (event) => {
-  document.querySelectorAll('div[data-network="email"]').addEventListener("click", (e) => {
+  document.querySelector('div[data-network="email"]').addEventListener("click", (e) => {
     var subject = "I'd like to share a link with you";
     var body = window.location.href;
     window.location.href = "mailto:?subject=" + subject + "&body=" + body;
