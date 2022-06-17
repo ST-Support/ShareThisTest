@@ -71,7 +71,8 @@ async function activateButtonsModal() {
   spacing: 0 // spacing = 8, no spacing = 0.
 } */
 
-window.__sharethis__.initialize(
+
+/* window.__sharethis__.initialize(
    
     document.querySelector('div[data-network="email"]').addEventListener("click", (e) => {
       var subject = "I'd like to share a link with you";
@@ -82,6 +83,17 @@ window.__sharethis__.initialize(
     })
     
 );
+ */
+
+window.onload = (event) => {
+  document.querySelectorAll('div[data-network="email"]').addEventListener("click", (e) => {
+    var subject = "I'd like to share a link with you";
+    var body = window.location.href;
+    window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+
+    e.stopPropagation();
+  })
+};
 
 window.__sharethis__.load('inline-share-buttons', {
   alignment: 'justified', // left, right, center, justified.
