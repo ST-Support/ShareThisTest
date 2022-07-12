@@ -81,4 +81,11 @@ text-align: center !important;
     .sharethis-inline-share-buttons{
      width: 300px;
     }
+    .sharethis-sticky-share-buttons{
+      position: fixed !important;
+      right: 0 !important;
+      top: 150px !important;
+      display: block !important;
+    }    
     }
+
